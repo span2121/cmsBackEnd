@@ -8,13 +8,13 @@ const dbConn = mysql.createConnection({
   database : 'Activityclg'
 });
 //to be contineous interaction with server
-setInterval(function () {
-  dbConn.query('select * from user');
-}, 5000);
-dbConn.connect(function(err) {
-  if (err) throw err;
-  console.log("Database Connected!");
-});
+// setInterval(function () {
+//   dbConn.query('select * from user');
+// }, 5000);
+// dbConn.connect(function(err) {
+//   if (err) throw err;
+//   console.log("Database Connected!");
+// });
 module.exports = dbConn;
 // for database connection 
 //ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
